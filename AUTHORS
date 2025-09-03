@@ -1,0 +1,12 @@
+
+Co-Maintainers: Mark Willey <willey@etla.net>
+                Dan Nicolaescu <dann@ics.uci.edu>
+
+Contributing Authors:
+ Luciano da Silva Ribas  <ribas@lasd.cefetpr.br [abandoned email address]> (javastroke)
+ Chris Laas <chrisl@cybercom.net [abandoned email address]> (tcl bindings)
+ Hamish Moffatt <hamish@rising.com.au> (autoconf support)
+
+See also the file CREDITS for a list of people who sent bug fixes, comments,
+constructive criticisms, and integration with other packages.
+

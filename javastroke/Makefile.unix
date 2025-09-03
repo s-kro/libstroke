@@ -1,0 +1,20 @@
+
+all::
+	"make compile to compile javastroke"
+
+compile::
+	javac Stroke.java
+	javac Paint.java
+
+distdir::
+	echo "nothing to do"
+
+test::
+	java Paint
+
+clean::
+	rm -f *class
+
+install::
+	echo "Install javastroke by hand, if desired"
+

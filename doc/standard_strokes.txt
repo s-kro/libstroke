@@ -1,0 +1,44 @@
+
+This is a list of the standard strokes.
+
+name		canonical	sloppy list
+dot		1 
+ul-lr		159
+lr-ul		951
+ur-ll		357
+ll-ur		753
+lr-ul-lr	75357
+w		1475963
+c		3214789
+.c		9874123
+ll-ul-lr	74159
+d		741236987
+intersection	7412369
+ll-ul-ur	74123
+u		1478963
+ur-ul-ll	32147
+.intersection	9632147
+.u		3698741
+ul-ll-ul-ur	1474123
+s		321456987
+ur-ul-lr	32159
+lr-ul-ur	95123
+right		456
+left		654
+down		258
+up		852
+lr-ur-ul	96321
+.bc		7896321
+bc		1236987
+ll-lr-ur	78963
+lr-ll-ul	98741
+ul-ll-lr	14789
+ur-lr-ll	36987
+ul-ur-lr	12369
+?		123658
+n		7415963
+.n		3695147
+o		236987412
+.o		214789632
+l-r-l		45654
+r-l-r		65456

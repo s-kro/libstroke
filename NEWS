@@ -1,0 +1,39 @@
+NEWS for libstroke-0.5.1
+
+  Fix some packaging errors.
+
+NEWS for libstroke-0.5
+
+  The big NEWS is that LibStroke now can draw the strokes! Yeeepeeee!
+  But it does not do so by default, you need to pass --with-mouse-footprints
+  to ./configure. After compiling everything try tests/stroke_test to
+  see how this works. 
+  
+  There's even more: libgstroke, a stroke implementation for GNOME has
+  been contributed by Dan Nicolaescu. It is fully functional (it
+  also supports mouse footprints by default!) and has a very easy to
+  use API. Try tests/gnome_stroke_test to see how it works (source
+  code in tests/gnome_stroke_test.c). 
+
+  We are proposing a set of strokes to be standard strokes. A pretty
+  picture with them their string representation can be found in 
+  doc/standard_strokes.jpg 
+  A text listing is in doc/standard_strokes.txt (we will find some
+  better names than the current ones). 
+  We'll also add some "sloppy strokes" for the standard strokes.
+
+  We created autoconf macros for libstroke and libgstroke, they are in
+  the macros subdir. 
+
+NEWS for libstroke-0.4
+
+Thu Mar 16 01:18:07 PST 2000
+  Hoo, I have not been making entries in this file.  The news tonight is
+  that I am releasing 0.4.  It has a super-cool Java port included and some
+  misc bug fixes with the install process.  Also, cool news is that there is
+  now support for LibStroke in FVWM2, gEDA, and PCB.  See the CREDITS file
+  for the authors that made this possible.
+
+  I am also thinking of hosting the project on sourceforge.net and using
+  their resources for making the project more accessible.
+

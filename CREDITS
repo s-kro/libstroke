@@ -1,0 +1,30 @@
+
+Thanks to everyone who has sent in diffs and patches, comments,
+suggestions, criticism, and support.  A special thanks to everyone who has
+used the library.
+
+Including:  (in no particular order)
+Jonathan Sergent <sergent@etla.net> (comments)
+Mike Fleming <mikef@computer.org> (comments)
+Terran Lane <terran@ecn.purdue.edu> (comments)
+Tim Stough <stough@ecn.purdue.edu> (comments)
+Deepak Saxena <deepak@csociety.purdue.edu> (windows port)
+Dan Goehring <dgoehrin@csociety.purdue.edu> (comments)
+Brandon Laflen <blaflen@ecn.purdue.edu> (comments)
+Joergen Gade <jgade@hw.seisy.abb.se [abandoned email address]> (comments)
+Chris Laas <chrisl@cybercom.net [abandoned email address]> (tcl bindings)
+Aldy Hernandez <aldy@andrews.edu> (comments)
+James Troup <J.J.Troup@scm.brad.ac.uk [abandoned email address]> (comments)
+Ales Hvezda <ahvezda@seul.org> (GPL License, gEDA integration)
+The gEDA Project (http://www.geda.seul.org)
+Hamish Moffatt <hamish@rising.com.au> (autoconf support)
+Jeremie Petit <Jeremie.Petit@Digital.com> (bug reports)
+Dominik Vogt <dominik_vogt@hp.com [abandoned email address]> (FVWM2 integration)
+Luciano da Silva Ribas  <ribas@lasd.cefetpr.br [abandoned email address]> (javastroke)
+Harry Eaton <haceaton@aplcomm.jhuapl.edu> (PCB integration)
+Dan Nicolaescu <dann@ics.uci.edu> (libgstroke)
+
+If your name belongs here, send me a note!  (Then, by definition, it will
+belong here!)  ;-)  Also, if I got the details of your contribution wrong,
+please email me and I'll update it.
+

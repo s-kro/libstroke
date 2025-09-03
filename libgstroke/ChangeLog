@@ -1,0 +1,31 @@
+2001-07-05  Dan Nicolaescu  <dann@ics.uci.edu>
+
+	* Rename everything to be called gstroke* instead of stroke* as
+	the later is sometimes used to mean other things in GNOME
+	programs. 
+
+2000-08-25  Dan Nicolaescu  <dann@ics.uci.edu>
+
+	* gnome-stroke.c: Move global data to a structure...
+	* stroke-internal.h: ... defined here (struct stroke_metrics).
+	(STROKE_METRICS): New define.
+
+	* gnome-stroke.c (stroke_init): 
+	(stroke_trans): Take a stroke_metrics* parameter.  
+	
+	(stroke_trans):	Call stroke_init instead of freeing the
+	pointList. 
+	
+	* stroke.h (STROKE_MOUSE_BUTTON): New define.
+	* gnome-stroke-wrapper.c (process_event): Use it.
+	(stroke_execute): Make it static.
+	(STROKE_SIGNALS): New define.
+	(stroke_signal_connect): 
+	(stroke_execute): Use it instead of a string. 
+	(stroke_cleanup): New function. Should be called when the widget
+	is destroyed. 
+	(stroke_canonical): Move it after stroke_trans so gcc can inline
+	it. 
+
+	Prepend _ to all the non-static functions to keep the namespace
+	clean. 

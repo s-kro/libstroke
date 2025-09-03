@@ -1,0 +1,65 @@
+The directory libgstroke contains a work-in-progress GNOME stroke
+implementation. The goal is to have a stroke library that integrates
+nicely in GNOME.
+
+This is a proof of concept implementation, it works quite well, but we
+would like to get some feedback from knowledgeable GNOME/Gtk hackers
+about:
+
+    1. the API. Is it good enough? Anything else that should be added?
+       Any name change suggestions?       
+ 
+    2. the implementation. Is the event handling correct? Is it
+       correct to call the stroke functions the way libgstroke does
+       it? (see how gstroke_execute is called)
+    
+A warning for potential libgstroke users: the API might (and probably
+should!)  change. 
+Being the first release of libgstroke, probably many thing
+Suggestions for changes are more than welcome,
+patches even more so.
+
+
+To enable strokes for a widget the application needs to call:
+
+gstroke_enable (GtkWidget* widget);
+
+  and then
+
+gstroke_signal_connect (widget, STROKE_STRING1, FUNCTION1, DATA1);
+gstroke_signal_connect (widget, STROKE_STRING2, FUNCTION2, DATA2);
+
+(gstroke_signal_connect is modelled after gtk_signal_connect)
+
+    Where:
+    STROKE_STRING* is a stroke string in the format described in
+    the README file (eg "456" for a horizontal left-to-right stroke).
+
+    FUNCTION* is a  GtkSignalFunc type function. 
+
+    DATA* is a gpointer to some private data (similar in usage to
+	gtk_signal_connect)
+
+    if the STROKE_STRING1 stroke is recognized FUNCTION1 is called 
+	like this: (*FUNCTION1)(widget, DATA1);
+
+When the widget is destroyed the gstroke_cleanup (widget) function
+should be called to free the allocated memory (is there a way to do
+this automatically???).
+
+Look in tests/gnome_stroke_test.c for an example of how easy to use
+the libgstroke library is!
+
+The implementation contains an event loop that is run when the
+GSTROKE_MOUSE_BUTTON  (2 by default) mouse button is pressed. When the
+stroke is finished, if it is recognized, the corresponding function
+is executed and the event loop exits. 
+
+The files that are installed by make install are gstroke.h and the
+libgstroke.{a,so} library.
+
+The AC_CHECK_LIBGSTROKE autoconf macro is defined in
+libgstroke.m4, use it in programs that need autoconf tests for
+libgstroke.
+
+The file libgstroke/TODO contains the TODO items for libgstroke. 

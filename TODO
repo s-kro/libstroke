@@ -1,0 +1,22 @@
+
+fix autoconfig stuff to actually find the gtk headers and only build gnome
+version of library if gnome is detected.
+
+in general, grokking and redo of autoconf
+
+General things I have planned to do:
+   make trailing XOR line/erase line
+   make the home page prettier
+   move development to sourceforge.net
+   add an FVWM module to display the stroke bindings (ie, a 'help' function)
+   write/test the C++,Perl, bindings or translations
+   make a GNOMEified version of the library, get it in glibc
+   write a GNOME control app for configuring strokes in GNOME
+
+Bug list:
+
+This may still be outstanding, I dunno:
+Jeremie Petit <Jeremie.Petit@Digital.com>
+>       I had a problem though, because the lib was not linked with the math
+>library (I had to add "-lm" in the libtool file, after "-lc").
+

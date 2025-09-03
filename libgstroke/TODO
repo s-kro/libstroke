@@ -1,0 +1,11 @@
+TODO
+-----
+
+Make gnome-stroke-draw.c:gstroke_invisible_window_init (GtkWidget *widget) 
+use Gtk+ primitives, not X11 primitives (no idea if this is even possible). 
+
+Should the static vars gstroke_* in gnome_stroke_draw.c be moved to
+stroke_metrics structure?
+
+Improve the autoconf macros. They should probably use the gnome
+autoconf infrastructure. Help with this would be appreciated.

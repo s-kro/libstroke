@@ -1,0 +1,15 @@
+
+Changes from 0.0 to 0.1
+ - changed // comments to /* for portability (thanks, sergent!)
+ - used much simpler makefile structure (thanks, sergent@etla.net!)
+
+Changes from 0.1 to 0.2
+ - added rudimentary ./configure support
+ - changed license to GPL
+
+Changes from 0.2 to 0.3
+ - put in Ales' and Manu's autoconf/make/configure support
+
+Changes from 0.3 to 0.31
+ - added stroke.h to list of installed files
+
