@@ -10,7 +10,7 @@ SUBDIRS = libstroke $(GSTROKE_SUBDS) tests doc javastroke
 EXTRA_DIST = COPYRIGHT CREDITS README.javastroke README.libgstroke
 
 m4datadir=$(datadir)/aclocal
-m4data_DATA=libstroke.m4 libgstroke.m4
+m4data_DATA=libstroke.m4
 
 MOSTLYCLEANFILES = core *~
 CLEANFILES = core *~
