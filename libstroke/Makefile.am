@@ -7,9 +7,6 @@ AUTOMAKE_OPTIONS = foreign
 
 EXTRA_DIST = 
 
-#tclpath::
-	#echo ${ENABLE_TCL}
-
 #if ENABLE_TCL
 #SEL_BIB = libstroke.la libstroke_tcl.la
 #else
@@ -34,8 +31,6 @@ libstroke_la_LDFLAGS = -version-info 0:5:0
 include_HEADERS = stroke.h
 
 INCLUDES = -I$(top_srcdir)/libstroke @X_CFLAGS@  
-
-EXTRA_DIST = 
 
 MOSTLYCLEANFILES = core *~ 
 CLEANFILES = core *~ 

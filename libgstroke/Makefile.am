@@ -21,8 +21,6 @@ noinst_HEADERS = gstroke-internal.h
 INCLUDES = @GTK_CFLAGS@
 LDADD    = @GTK_LIBS@
 
-EXTRA_DIST = 
-
 MOSTLYCLEANFILES = core *~ 
 CLEANFILES = core *~ 
 DISTCLEANFILES = core *~ 
