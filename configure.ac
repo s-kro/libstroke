@@ -11,7 +11,7 @@ dnl Initialize automake stuff
 AM_INIT_AUTOMAKE($PACKAGE, $LIBSTROKE_VERSION, no-define)
 
 dnl Create a configuration header
-AM_CONFIG_HEADERS(config.h)
+AC_CONFIG_HEADERS(config.h)
 
 dnl Build time sanity check...
 AM_SANITY_CHECK
