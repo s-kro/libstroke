@@ -30,7 +30,7 @@ libstroke_la_LDFLAGS = -version-info 0:5:0
 
 include_HEADERS = stroke.h
 
-INCLUDES = -I$(top_srcdir)/libstroke @X_CFLAGS@  
+AM_CPPFLAGS = -I$(top_srcdir)/libstroke @X_CFLAGS@  
 
 MOSTLYCLEANFILES = core *~ 
 CLEANFILES = core *~ 

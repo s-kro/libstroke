@@ -13,7 +13,7 @@ noinst_PROGRAMS = stroke_test $(GSTROKETEST)  #gstroke_conf
 stroke_test_SOURCES = stroke_test.c  #gstroke_conf.c
 gnome_stroke_test_SOURCES = gnome_stroke_test.c
 
-INCLUDES = -I$(top_srcdir)/libstroke -I$(top_srcdir)/libgstroke \
+AM_CPPFLAGS = -I$(top_srcdir)/libstroke -I$(top_srcdir)/libgstroke \
 		@X_CFLAGS@ @GTK_CFLAGS@
 
 stroke_test_LDADD = ../libstroke/libstroke.la @X_LDFLAGS@
